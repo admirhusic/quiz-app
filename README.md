@@ -14,6 +14,8 @@ Rename .env.example to .env and edit your database credentials
 
 create a database
 
+php artisan migrate
+
 php artisan key:generate 
 
 npm run watch

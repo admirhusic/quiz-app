@@ -19,7 +19,7 @@ class ParticipateController extends Controller
 
     public function show($quiz) 
     {   
-        $questions = Question::where('quiz_id', $quiz)->firstOrFail()->get();
+        $questions = Question::where('quiz_id', $quiz)->get();
         return view('participate.show', compact('questions'));
 
     }
